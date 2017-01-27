@@ -1,0 +1,66 @@
+#!/usr/bin/python3
+# ~/dev/py/projlocator/pl_projRelPath
+
+""" Command-line utility returning the relative path for a project name. """
+
+import sys
+from argparse import ArgumentParser
+
+from optionz import dump_options
+from projlocator import (__version__, __version_date__,
+                         proj_rel_path_from_name)
+
+
+def main():
+    """
+    Command-line utility returning the relative path for a project name.
+    """
+
+    # parse the command line ----------------------------------------
+    parser = ArgumentParser()
+
+    parser.add_argument('-j', '--justShow', action='store_true',
+                        help='show options and exit')
+
+    # language abbreviation (<= characters)
+    parser.add_argument('-L', '--lang',
+                        help='language abbrev')
+
+    # project name
+    parser.add_argument('-P', '--project',
+                        help='preject subdir name')
+
+    parser.add_argument('-v', '--verbose', action='store_true',
+                        help='be chatty')
+
+    args = parser.parse_args()
+
+    # fixups --------------------------------------------------------
+    # sanity checks -------------------------------------------------
+    if args.project is None or len(args.project) == 0:
+        print("you must supply a project name")
+        parser.print_usage()
+        sys.exit(1)
+
+    # complete setup ------------------------------------------------
+    app_name = 'sdProjRelPath %s' % __version__
+
+    # maybe show options and such -----------------------------------
+    if args.verbose or args.justShow:
+        print("%s %s" % (app_name, __version_date__))
+        print(dump_options(args))
+
+    if args.justShow:
+        sys.exit(0)
+
+    # do what's required --------------------------------------------
+    project = args.project
+    rel_path = proj_rel_path_from_name(project)
+    if (not rel_path) or (rel_path == ''):
+        tmp_ext = "_%s" % args.lang
+        fake_name = "%s%s" % (project, tmp_ext)
+        rel_path = proj_rel_path_from_name(fake_name)[:-len(tmp_ext)]
+    print(rel_path)
+
+if __name__ == '__main__':
+    main()
