@@ -1,0 +1,100 @@
+#!/usr/bin/python3
+# ~/dev/py/sharedev/pl_projects
+
+"""
+Utility listing names of all projects, possibly restricted to a
+specific language.
+"""
+
+import sys
+from argparse import ArgumentParser
+
+from optionz import dump_options
+from projlocator import (__version__, __version_date__,
+                         get_lang_for_project,
+                         get_proj_names, proj_dir_from_name, )
+
+
+def list_projects(options):
+    """ Given the options set, list language and project names. """
+    projects = options.projects
+
+    for project in projects:
+        lang = get_lang_for_project(project)
+        print('%-5s  %s' % (lang, project))
+
+
+def main():
+    """ Collect option values for the listing. """
+
+    parser = ArgumentParser(description='diff dev and sharedev')
+
+    parser.add_argument('-a', '--allProjects', action='store_true',
+                        help='get status of all projects')
+
+    parser.add_argument('-j', '--justShow', action='store_true',
+                        help='show options and exit')
+
+    parser.add_argument('-L', '--mainLang', type=str,
+                        help='set main language for project(s)')
+
+    parser.add_argument('-T', '--testing', action='store_true',
+                        help='this is a test run')
+
+    parser.add_argument('-v', '--verbose', action='store_true',
+                        help='be chatty')
+
+    parser.add_argument('projects', nargs='*',
+                        help='any number of valid project names')
+
+    args = parser.parse_args()
+
+    # fixups ----------- ---------------------------------------------
+    # if no specific projects have been chosen, assume all are selected
+    if not args.projects:
+        args.allProjects = True
+
+    if args.allProjects:
+        if len(args.projects) > 0:
+            print("all projects selected, so ignoring names provided")
+        args.projects = get_proj_names()
+
+    # sanity checks -------------------------------------------------
+    # if a language filter has been set, drop any non-matching projects
+    if args.mainLang:
+        proj = []
+        for project in args.projects:
+            lang = get_lang_for_project(project)
+            if lang == args.mainLang:
+                proj.append(project)
+        args.projects = proj
+
+    if not (args.testing or args.justShow):
+        for project in args.projects:
+            # we require that this be the name of an existing project
+            proj_dir = proj_dir_from_name(project)
+            if proj_dir == '':
+                print("'%s' is not a ghplib project" % project)
+                sys.exit(1)
+
+    # complete setup ------------------------------------------------
+    app_name = 'sdProjects %s' % __version__
+
+    # maybe show options and such -----------------------------------
+    if args.verbose or args.justShow:
+        print("%s %s" % (app_name, __version_date__))
+        print(dump_options(args))
+
+    # do what's required --------------------------------------------
+    if not args.justShow:
+        list_projects(args)
+
+    # gitMgr = GitMgr()           # acquire lock
+    # try:
+    #    listProjects(args)
+    # except:
+    #    pass
+    # gitMgr.close()              # release lock
+
+if __name__ == '__main__':
+    main()

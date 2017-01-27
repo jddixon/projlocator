@@ -1,0 +1,10 @@
+# projlocator/.dvcz/projCfg.local
+
+dir:pkg:projlocator
+dir:clr:tmp
+
+txt:std:LICENSE-MIT.md
+
+py:global:pl_projRelPath
+py:global:pl_projects
+
