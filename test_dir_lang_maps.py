@@ -30,14 +30,14 @@ class TestMaps(unittest.TestCase):
             get_lang_for_dir(None)
             self.fail("didn't catch missing directory name")
         # pylint: disable=bare-except
-        except:
+        except BaseException:
             pass
 
         try:
             get_lang_for_dir('foo/bar')
             self.fail("didn't catch relative path")
         # pylint: disable=bare-except
-        except:
+        except BaseException:
             pass
 
         # failure to match just returns None
@@ -53,8 +53,8 @@ class TestMaps(unittest.TestCase):
         self.assertEqual(get_lang_for_dir('/home/jdd/dev/py/'), 'py')
         self.assertEqual(
             get_lang_for_dir('/home/jdd/dev/go/src/github.com/jddixon/'), 'go')
-        self.assertEqual(get_lang_for_dir('/home/jdd/dev/ocaml/'), 'ml')
-        self.assertEqual(get_lang_for_dir('/home/jdd/dev/ruby/'), 'rb')
+        self.assertEqual(get_lang_for_dir('/home/jdd/dev/ml/'), 'ml')
+        self.assertEqual(get_lang_for_dir('/home/jdd/dev/rb/'), 'rb')
 
         # dummy 'top' language
         self.assertEqual(get_lang_for_dir('/home/jdd/dev/'), 'top')
@@ -71,11 +71,12 @@ class TestMaps(unittest.TestCase):
         self.assertEqual(get_dir_for_lang('py'), '/home/jdd/dev/py/')
         self.assertEqual(get_dir_for_lang('go'),
                          '/home/jdd/dev/go/src/github.com/jddixon/')
-        self.assertEqual(get_dir_for_lang('ml'), '/home/jdd/dev/ocaml/')
-        self.assertEqual(get_dir_for_lang('rb'), '/home/jdd/dev/ruby/')
+        self.assertEqual(get_dir_for_lang('ml'), '/home/jdd/dev/ml/')
+        self.assertEqual(get_dir_for_lang('rb'), '/home/jdd/dev/rb/')
 
         # dummy 'top' language
         self.assertEqual(get_dir_for_lang('top'), '/home/jdd/dev/')
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -30,7 +30,7 @@ class TestProjDirFromName(unittest.TestCase):
             proj_dir_from_name(None)
             self.fail("didn't catch missing project name")
         # pylint: disable=bare-except
-        except:
+        except BaseException:
             pass
 
         # failure to match should return ""
@@ -73,7 +73,7 @@ class TestProjDirFromName(unittest.TestCase):
                          '/home/jdd/dev/go/src/github.com/jddixon/xgo_go')
 
         self.assertEqual(proj_dir_from_name('xlreg_ml'),
-                         '/home/jdd/dev/ocaml/xlreg_ml')
+                         '/home/jdd/dev/ml/xlreg_ml')
 
         self.assertEqual(proj_dir_from_name('magicsack'),
                          '/home/jdd/dev/py/magicsack')
@@ -100,13 +100,14 @@ class TestProjDirFromName(unittest.TestCase):
                          '/home/jdd/dev/java/xlreg_java')
 
         self.assertEqual(proj_dir_from_name('xlreg_rb'),
-                         '/home/jdd/dev/ruby/xlreg_rb')
+                         '/home/jdd/dev/rb/xlreg_rb')
 
         # TOP LEVEL PROJECT(S)
         self.assertEqual(proj_dir_from_name('xlattice'),
                          '/home/jdd/dev/xlattice')
 
         # these have been returned incorrectly ======================
+
 
 if __name__ == '__main__':
     unittest.main()

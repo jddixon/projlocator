@@ -33,7 +33,7 @@ class TestLangForProject(unittest.TestCase):
             get_lang_for_project(None)
             self.fail("didn't catch missing project name")
         # pylint: disable=bare-except
-        except:
+        except BaseException:
             pass
 
         # failure to match should return ""
@@ -64,6 +64,7 @@ class TestLangForProject(unittest.TestCase):
 
         # top-level project(s)
         self.assertEqual(get_lang_for_project('xlattice'), 'top')
+
 
 if __name__ == '__main__':
     unittest.main()
