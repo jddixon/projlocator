@@ -26,8 +26,8 @@ __all__ = ['__version__', '__version_date__',
 
 # -- exported constants ---------------------------------------------
 
-__version__ = '0.0.2'
-__version_date__ = '2017-01-27'
+__version__ = '0.0.3'
+__version_date__ = '2017-04-29'
 
 DEV_BASE = os.path.join(os.environ['HOME'], 'dev')
 SHAREDEV_APP_DIR = '/var/app/sharedev'
@@ -52,6 +52,7 @@ def _update_proj_list():
                 parts = line.split()
                 PROJ_LIST_MAP[parts[0]] = parts[1]
             line = file.readline()
+
         # DEBUG
         # print("there are %d items in the map" % len(PROJ_LIST_MAP))
         # END
@@ -86,11 +87,11 @@ def add_to_proj_list(project, rel_path=None):
     elif project.endswith('_java'):
         expected_rel_path = os.path.join('java', project)
     elif project.endswith('_ml'):
-        expected_rel_path = os.path.join('ocaml', project)
+        expected_rel_path = os.path.join('ml', project)
     elif project.endswith('_py'):
         expected_rel_path = os.path.join('py', project)
     elif project.endswith('_rb'):
-        expected_rel_path = os.path.join('ruby', project)
+        expected_rel_path = os.path.join('rb', project)
 
     if expected_rel_path:
         if rel_path:
@@ -226,12 +227,13 @@ def proj_rel_path_from_name(project):
     elif project.endswith('_java'):
         rel_path = os.path.join('java', project)
     elif project.endswith('_ml'):
-        rel_path = os.path.join('ocaml', project)
+        rel_path = os.path.join('ml', project)
     elif project.endswith('_py'):
         rel_path = os.path.join('py', project)
     elif project.endswith('_rb'):
-        rel_path = os.path.join('ruby', project)
+        rel_path = os.path.join('rb', project)
     return rel_path
+
 
 # -- lang/dir pairs -------------------------------------------------
 PAIRS = [\
@@ -244,8 +246,8 @@ PAIRS = [\
     ['java', os.path.join(DEV_BASE, 'java/')],
     ['js', os.path.join(DEV_BASE, 'node/')],
     ['py', os.path.join(DEV_BASE, 'py/')],
-    ['ml', os.path.join(DEV_BASE, 'ocaml/')],
-    ['rb', os.path.join(DEV_BASE, 'ruby/')],
+    ['ml', os.path.join(DEV_BASE, 'ml/')],
+    ['rb', os.path.join(DEV_BASE, 'rb/')],
 
     # dummy language
     ['top', DEV_BASE + '/'], ]

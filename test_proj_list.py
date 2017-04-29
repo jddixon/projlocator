@@ -31,9 +31,9 @@ class TestProjList(unittest.TestCase):
         self.assertEqual(add_to_proj_list('foo_go'),
                          'go/src/github.com/jddixon/foo_go')
         self.assertEqual(add_to_proj_list('foo_java'), 'java/foo_java')
-        self.assertEqual(add_to_proj_list('foo_ml'), 'ocaml/foo_ml')
+        self.assertEqual(add_to_proj_list('foo_ml'), 'ml/foo_ml')
         self.assertEqual(add_to_proj_list('foo_py'), 'py/foo_py')
-        self.assertEqual(add_to_proj_list('foo_rb'), 'ruby/foo_rb')
+        self.assertEqual(add_to_proj_list('foo_rb'), 'rb/foo_rb')
 
         try:
             # pylint: disable=no-value-for-parameter
@@ -66,6 +66,7 @@ class TestProjList(unittest.TestCase):
         self.check('alertz', 'py/alertz')
         self.check('gotwitgo', 'go/src/github.com/jddixon/gotwitgo')
         self.check('xlattice', 'xlattice')
+
 
 if __name__ == '__main__':
     unittest.main()

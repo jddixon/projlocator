@@ -62,5 +62,6 @@ def main():
         rel_path = proj_rel_path_from_name(fake_name)[:-len(tmp_ext)]
     print(rel_path)
 
+
 if __name__ == '__main__':
     main()

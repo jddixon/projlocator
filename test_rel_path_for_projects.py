@@ -31,14 +31,14 @@ class TestRelPathForProject(unittest.TestCase):
             proj_rel_path_from_name(None)
             self.fail("didn't catch missing project name")
         # pylint: disable=bare-except
-        except:
+        except BaseException:
             pass
 
         try:
             proj_rel_path_from_name('')
             self.fail("didn't catch empty project name")
         # pylint: disable=bare-except
-        except:
+        except BaseException:
             pass
 
         # failure to match should return ""
@@ -65,8 +65,8 @@ class TestRelPathForProject(unittest.TestCase):
                 ('xlreg_c', 'c/xlreg_c'),
                 ('xlreg_cpp', 'cpp/xlreg_cpp'),
                 ('xlreg_java', 'java/xlreg_java'),
-                ('xlreg_rb', 'ruby/xlreg_rb'),
-                ('xlreg_ml', 'ocaml/xlreg_ml'),
+                ('xlreg_rb', 'rb/xlreg_rb'),
+                ('xlreg_ml', 'ml/xlreg_ml'),
                 ('xlreg_py', 'py/xlreg_py'),
 
                 # top level project(s)
@@ -81,11 +81,12 @@ class TestRelPathForProject(unittest.TestCase):
             ('foo_go', 'go/src/github.com/jddixon/foo_go'),
             ('foo_cpp', 'cpp/foo_cpp'),
             ('foo_java', 'java/foo_java'),
-            ('foo_rb', 'ruby/foo_rb'),
-            ('foo_ml', 'ocaml/foo_ml'),
+            ('foo_rb', 'rb/foo_rb'),
+            ('foo_ml', 'ml/foo_ml'),
             ('foo_py', 'py/foo_py'),
         ]:
             self.assertEqual(proj_rel_path_from_name(pair[0]), pair[1])
+
 
 if __name__ == '__main__':
     unittest.main()
