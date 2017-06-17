@@ -1,4 +1,4 @@
-pylint setup.py  projlocator            \
-    pl_projects pl_projRelPath          \
-    test*.py
+pylint setup.py  src/projlocator            \
+    src/pl_projects src/pl_projRelPath          \
+    tests/test*.py
 

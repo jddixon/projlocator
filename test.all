@@ -3,12 +3,8 @@
 if [ ! -z "${DEV_BASE// }" ]
 then
   cd $DEV_BASE/py/projlocator
-  
-  ./test_dir_lang_maps.py
-  ./test_lang_for_projects.py
-  ./test_proj_dir_from_name.py
-  ./test_proj_list.py
-  ./test_rel_path_for_projects.py
+ 
+  pytest
   
 else
   echo "DEV_BASE is not defined"

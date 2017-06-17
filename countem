@@ -6,7 +6,8 @@ then
   
   rm -rf build/* tmp/* 
   
-  pySloc -L py pl_projects pl_projRelPath  -X cover -X htmlcov -X dist -v $@
+  pySloc -L py src tests-X cover -X htmlcov -X dist -v $@
+
 else
   echo "DEV_BASE is not defined"
 fi

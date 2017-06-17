@@ -26,8 +26,8 @@ __all__ = ['__version__', '__version_date__',
 
 # -- exported constants ---------------------------------------------
 
-__version__ = '0.0.3'
-__version_date__ = '2017-04-29'
+__version__ = '0.0.4'
+__version_date__ = '2017-06-17'
 
 DEV_BASE = os.path.join(os.environ['HOME'], 'dev')
 SHAREDEV_APP_DIR = '/var/app/sharedev'
@@ -52,6 +52,7 @@ def _update_proj_list():
                 parts = line.split()
                 PROJ_LIST_MAP[parts[0]] = parts[1]
             line = file.readline()
+
 
         # DEBUG
         # print("there are %d items in the map" % len(PROJ_LIST_MAP))
