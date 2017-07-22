@@ -2,11 +2,13 @@
 project:projlocator
 package:projlocator
 mainlang:py
-version:0.0.1
-versionDate:2016-11-30
+version:0.0.5
+versionDate:2017-07-22
 :?dirs?:
 dir:std:ghpDoc
 dir:std:dist
+dir:std:src
+dir:std:tests
 dir:std:.dvcz
 dir:pkg:projlocator
 dir:clr:build
@@ -40,8 +42,3 @@ bash:std:checkCoverage
 py:std:setup.py
 py:global:pl_projRelPath
 py:global:pl_projects
-py:test:test_dir_lang_maps.py
-py:test:test_lang_for_projects.py
-py:test:test_proj_dir_from_name.py
-py:test:test_proj_list.py
-py:test:test_rel_path_for_projects.py

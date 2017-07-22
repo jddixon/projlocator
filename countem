@@ -6,7 +6,7 @@ then
   
   rm -rf build/* tmp/* 
   
-  pySloc -L py pl_projects pl_projRelPath  -X cover -X htmlcov -X dist -v $@
+  pySloc -L py  -X cover -X htmlcov -X dist -v $@ src/projlocator src/pl_projects src/pl_projRelPath tests/test_dir_lang_maps.py tests/test_lang_for_projects.py tests/test_proj_dir_from_name.py tests/test_proj_list.py tests/test_rel_path_for_projects.py setup.py
 else
   echo "DEV_BASE is not defined"
 fi

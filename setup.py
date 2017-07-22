@@ -6,7 +6,7 @@
 import re
 from distutils.core import setup
 __version__ = re.search(r"__version__\s*=\s*'(.*)'",
-                        open('projlocator/__init__.py').read()).group(1)
+                        open('src/projlocator/__init__.py').read()).group(1)
 
 # see http://docs.python.org/distutils/setupscript.html
 
@@ -15,8 +15,8 @@ setup(name='projlocator',
       author='Jim Dixon',
       author_email='jddixon@gmail.com',
       py_modules=[],
-      packages=['projlocator', ],
-      scripts=['pl_projects', 'pl_projRelPath', ],
+      packages=['src/projlocator', ],
+      scripts=['src/pl_projects', 'src/pl_projRelPath', ],
       description='manage software projects organized by language',
       url='https://jddixon.github.com/projlocator',
       classifiers=[
