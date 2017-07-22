@@ -1,5 +1,8 @@
 py/projlocator/CHANGES
 
+v0.0.5
+    2017-07-22
+        * add MANIFEST.in, rewrite setup.py; edit cfg files         SLOC  762
 v0.0.4
     2017-06-17
         * restructure for pytest                                    SLOC  759
@@ -13,6 +16,7 @@ v0.0.2
 v0.0.1
     2016-11-30
         initial commit                                              SLOC  868
+
 
 
 
