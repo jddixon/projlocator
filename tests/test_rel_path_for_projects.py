@@ -54,7 +54,8 @@ class TestRelPathForProject(unittest.TestCase):
 
         # these are real project names
         for pair in [
-                ('cryptoserver_go', 'go/src/github.com/jddixon/cryptoserver_go'),
+                ('cryptoserver_go',
+                    'go/src/github.com/jddixon/cryptoserver_go'),
                 ('ctries_go', 'go/src/github.com/jddixon/ctries_go'),
                 ('merkletree', 'py/merkletree'),
                 ('nlp', 'py/nlp'),

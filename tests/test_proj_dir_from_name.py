@@ -55,7 +55,8 @@ class TestProjDirFromName(unittest.TestCase):
                          '/home/jdd/dev/py/bindex')
 
         self.assertEqual(proj_dir_from_name('cryptoserver_go'),
-                         '/home/jdd/dev/go/src/github.com/jddixon/cryptoserver_go')
+                         '/home/jdd/dev/go/src/github.com/jddixon/' +
+                         'cryptoserver_go')
 
         self.assertEqual(proj_dir_from_name('fieldz'),
                          '/home/jdd/dev/py/fieldz')

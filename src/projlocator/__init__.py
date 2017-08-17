@@ -2,14 +2,8 @@
 
 """ Utilities for managing a projects directory organized by language. """
 
-import errno
-import hashlib
 import os
-import re
 import shutil
-import subprocess
-import sys
-import time
 
 __all__ = ['__version__', '__version_date__',
            # CONSTANTS
@@ -26,8 +20,8 @@ __all__ = ['__version__', '__version_date__',
 
 # -- exported constants ---------------------------------------------
 
-__version__ = '0.0.5'
-__version_date__ = '2017-07-22'
+__version__ = '0.0.6'
+__version_date__ = '2017-08-17'
 
 DEV_BASE = os.path.join(os.environ['HOME'], 'dev')
 SHAREDEV_APP_DIR = '/var/app/sharedev'
