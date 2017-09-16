@@ -7,24 +7,24 @@ Giaje1YAJPNVBt3dlOA5lhBp4GpSYBskJ9UR2Zyt3lgAGK3dEwxYETLMh9VWEV8i
 k2lyCIE/V/CDb9eVDYQgYSJYrnQ/JAPST7NbcY8aI+/0l7QVBhLBpmOCvmS6ofvz
 /QIDAQAB
 -----END PUBLIC KEY-----
-projlocator v0.0.6
-2017-08-17 19:49:18
+projlocator v0.0.7
+2017-09-16 22:24:37
 # BEGIN CONTENT #
 projlocator
  .cache
   v
    cache
-    lastfailed 0ca8035eea33574332e8b8e55e00886397b9a821
+    lastfailed bf21a9e8fbc5a3846fb05b4fa0859e0917b2202f
  .dvcz
-  builds 96b569bbc09c5df4fc6b62b4f6ba090d4eabd609
+  builds b1c52e8f2aaad26747701f62c6121b8f71e87789
   copyright 9ba73bf798bce641eb5082b855c6788fe7ea5833
-  lastBuildList 6f3795f5926949dea89e039b0e8a6feb9d0ceeef
+  lastBuildList 4fe4ea5ac1a1ca12d3eab178bffcfdbd1a7ff597
   license 5977a55c75bb4612004451a56b0b4c22d9d3311d
   projCfg bd4ec24b30ab4543c92c467c5d6b615c451996ac
   projCfg.local 59a259e4fd082bf8f853eaed67be4d2c5908d571
-  version 8eac8b7623c120f762c30b6efc8ed4ac45f1f0c3
- .gitignore fa249afe19714b701dd828a80bd855e2ce1b05e4
- CHANGES d7b0c1a5d5c09b6338754546c9b08a6760be4006
+  version 570b5d3d4afaf8e4978edda483dbcccf9d7866db
+ .gitignore c8129c7133b7a7755cefd3dfc62a9af7bc306aa0
+ CHANGES b45bb7620141ae7fa5dc1e6b35257ed0a2b194b0
  LICENSE-MIT.md 1aadfd51d28fc4b9e3f5929212794dd121b13e26
  MANIFEST.in 7ecdc5eedf233385e0f99ba4c6e4a42212adb46f
  README.md c2a21064a3eaf72474b0eeb956c07699bced656a
@@ -36,13 +36,13 @@ projlocator
  ghpDoc
   index.md 189d5917540c3b909617d15fa217ef8af91bc6ff
  installit d5dee794f035dac3db1b7a14901cfb541767a39f
- requirements.txt ecc90543d8c6e71204664bb5a229b48a58775c6f
+ requirements.txt 5cc8df21497b9e1d655a8b457529b3e7540ef0d9
  setup.py 6b171b6a7aa8341d1cf6e023391efbc1c454aad2
  src
   pl_projRelPath 2282ff890d6d19c033f4afa8ca522fc8db818da3
   pl_projects 1b317254dd00d88d4ed009552357582083e8d9e4
   projlocator
-   __init__.py bfe140f91c07c16a6cb4529a06e698adaff44c62
+   __init__.py 5783fc574fa31e6fad2b632e21a62b6a14fd76d6
  styleit d6e8a97566427bc98f85801e85ed23503ffd18ee
  test.all b58bf598179349e7d53912335ff3d798aafe30a8
  test_requirements.txt 263fd147bfac9d1b6320c75edffd182b529677e2
@@ -52,7 +52,7 @@ projlocator
   test_proj_dir_from_name.py df59c63bcde6c5fade72ab3a7ae1f8d3bf86b673
   test_proj_list.py c30971d6fd25eb5f044c739397b29c927c328f81
   test_rel_path_for_projects.py 6a8b22721c41814ff3612e6ac90ca003debe22cf
- tox.ini 793faec2038ee3694f54802f82083e4ac203670e
+ tox.ini 7af5905e6f51595aa70dc2f8c82d11fda8ca8da6
 # END CONTENT #
 
-W00K/Zgw9qjpLHjUdUR2IH53WzWoGAeJF9Bei1fXK49TYscce4eLfnXscT6q/6hplAPGnHEG9S2TqV8zAdxh9CADQI15p7xRh1Z/9lgv2egFdowd24mdDGBZr95vnu7tXxrD8CfPz25XRBtQTv/WpFDIG4GCU9g45JstMwYYpY/ye14igNIslYjcOtjez1TbqpxPQ0gpmau+JaQAznUxVzydDlXb37C6kCi1qmZ3VlndX48R4Duupk8vB1SmAWs3uNWHpktvlaHxeDDF2TKi4BYI3oR3UklBp75+PupzIlDcCKothOFfwR2S7Lox9GW7uK8TErx4r7b0FsAxtgNdFA==
+NfGwW3vildFxCJNdRfUzsZ2wdKil/9IC/ImFC/NrNC2boPh7nN8fR2cor3yJNU3jsYhgDYeyDXovn4gFfseuqzKPFbHy7H2m6Mr3+MkDtRLJ+57JwCebThCSdvjosao0WZFxxxllkWk8tl6YhiyiaXk2RijkunWaF+jFUJFF2qN+JyEaj48WBnBMQc7KIolVKwDMERJUf6jo4xYKgEl+pYHwVUGJJdF8vdHKuEtdzgPJbItceV+qmgAggj9kzKXb8Xygjg63Z0u5PcCmtsa8qQ2P6dP7Mec5L4z0lz/xD3kJQEkeOaGuWse6sKM10GkhdjlfMchg6VXv2XivlPBvpQ==
