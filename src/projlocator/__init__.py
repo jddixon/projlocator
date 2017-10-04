@@ -20,8 +20,8 @@ __all__ = ['__version__', '__version_date__',
 
 # -- exported constants ---------------------------------------------
 
-__version__ = '0.0.7'
-__version_date__ = '2017-09-16'
+__version__ = '0.0.8'
+__version_date__ = '2017-10-04'
 
 DEV_BASE = os.path.join(os.environ['HOME'], 'dev')
 SHAREDEV_APP_DIR = '/var/app/sharedev'

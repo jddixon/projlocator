@@ -12,7 +12,7 @@ if exists('README.md'):
         long_desc = file.read()
 
 setup(name='projlocator',
-      version='0.0.6',
+      version='0.0.8',
       author='Jim Dixon',
       author_email='jddixon@gmail.com',
       long_description=long_desc,
@@ -22,6 +22,7 @@ setup(name='projlocator',
       include_package_data=False,
       zip_safe=False,
       scripts=['src/pl_projects', 'src/pl_projRelPath'],
+      ext_modules=[],
       description='manage software projects organized by language',
       url='https://jddixon.github.io/projlocator',
       classifiers=[
