@@ -7,24 +7,21 @@ Giaje1YAJPNVBt3dlOA5lhBp4GpSYBskJ9UR2Zyt3lgAGK3dEwxYETLMh9VWEV8i
 k2lyCIE/V/CDb9eVDYQgYSJYrnQ/JAPST7NbcY8aI+/0l7QVBhLBpmOCvmS6ofvz
 /QIDAQAB
 -----END PUBLIC KEY-----
-projlocator v0.0.7
-2017-09-16 22:24:37
+projlocator v0.0.8
+2017-10-04 23:43:57
 # BEGIN CONTENT #
 projlocator
- .cache
-  v
-   cache
-    lastfailed bf21a9e8fbc5a3846fb05b4fa0859e0917b2202f
  .dvcz
-  builds b1c52e8f2aaad26747701f62c6121b8f71e87789
+  builds e6eccbe93faab85e9c8ec9800eb26c6c7aa15597
   copyright 9ba73bf798bce641eb5082b855c6788fe7ea5833
-  lastBuildList 4fe4ea5ac1a1ca12d3eab178bffcfdbd1a7ff597
+  lastBuildList 52baa32172705c291007a8dd6ee14895cc86283c
   license 5977a55c75bb4612004451a56b0b4c22d9d3311d
   projCfg bd4ec24b30ab4543c92c467c5d6b615c451996ac
   projCfg.local 59a259e4fd082bf8f853eaed67be4d2c5908d571
-  version 570b5d3d4afaf8e4978edda483dbcccf9d7866db
+  projConfig.toml ff802458e572d7e89f03730e3b14baebc03e8a71
+  version 88f05ec7f19b8b4a09dff5a3bf7b561d60730cd9
  .gitignore c8129c7133b7a7755cefd3dfc62a9af7bc306aa0
- CHANGES b45bb7620141ae7fa5dc1e6b35257ed0a2b194b0
+ CHANGES f9f5fcae4b0259092fb30f94ac063421bef0f9e8
  LICENSE-MIT.md 1aadfd51d28fc4b9e3f5929212794dd121b13e26
  MANIFEST.in 7ecdc5eedf233385e0f99ba4c6e4a42212adb46f
  README.md c2a21064a3eaf72474b0eeb956c07699bced656a
@@ -37,12 +34,12 @@ projlocator
   index.md 189d5917540c3b909617d15fa217ef8af91bc6ff
  installit d5dee794f035dac3db1b7a14901cfb541767a39f
  requirements.txt 5cc8df21497b9e1d655a8b457529b3e7540ef0d9
- setup.py 6b171b6a7aa8341d1cf6e023391efbc1c454aad2
+ setup.py dd3b37dc7c030a0ad86a53b6f5001d26065640c7
  src
   pl_projRelPath 2282ff890d6d19c033f4afa8ca522fc8db818da3
   pl_projects 1b317254dd00d88d4ed009552357582083e8d9e4
   projlocator
-   __init__.py 5783fc574fa31e6fad2b632e21a62b6a14fd76d6
+   __init__.py 591417355103b2ab43f7f1a9f7c7c1c6ba7ddf61
  styleit d6e8a97566427bc98f85801e85ed23503ffd18ee
  test.all b58bf598179349e7d53912335ff3d798aafe30a8
  test_requirements.txt 263fd147bfac9d1b6320c75edffd182b529677e2
@@ -55,4 +52,4 @@ projlocator
  tox.ini 7af5905e6f51595aa70dc2f8c82d11fda8ca8da6
 # END CONTENT #
 
-NfGwW3vildFxCJNdRfUzsZ2wdKil/9IC/ImFC/NrNC2boPh7nN8fR2cor3yJNU3jsYhgDYeyDXovn4gFfseuqzKPFbHy7H2m6Mr3+MkDtRLJ+57JwCebThCSdvjosao0WZFxxxllkWk8tl6YhiyiaXk2RijkunWaF+jFUJFF2qN+JyEaj48WBnBMQc7KIolVKwDMERJUf6jo4xYKgEl+pYHwVUGJJdF8vdHKuEtdzgPJbItceV+qmgAggj9kzKXb8Xygjg63Z0u5PcCmtsa8qQ2P6dP7Mec5L4z0lz/xD3kJQEkeOaGuWse6sKM10GkhdjlfMchg6VXv2XivlPBvpQ==
+HqiWUcuTu/eZXKy/shiiKbomb8nlLbAbObY12GrF25J3r2ISTd5hDFMfeh3Mjwri4ZkDLAYM9qgLHiVxpUwQeIgOSnOfJwbmYweXs6tjeADJmh7O/VWawYalsBMBRNNxbcKBcE2/L4+CocFekdKn6pnlX4RS94yZJVaCy5+qEILvbsSpoAZVv2Pesu5rfvQmGaljxSupelSJk7LaT59AiTu95BNXPRv74AjhE1m2RSzT2w9PfACB2RX0mQr2iz4MGyxxoWnMdd94hdM+3mwcQHOc34E3CkK8XfGp9jsy535/gn4jRs9VVIll5+tE8Iavu1kt4iaa7IJ0yos7VLM7Vw==
