@@ -20,8 +20,8 @@ __all__ = ['__version__', '__version_date__',
 
 # -- exported constants ---------------------------------------------
 
-__version__ = '0.0.8'
-__version_date__ = '2017-10-04'
+__version__ = '0.0.9'
+__version_date__ = '2017-12-17'
 
 DEV_BASE = os.path.join(os.environ['HOME'], 'dev')
 SHAREDEV_APP_DIR = '/var/app/sharedev'
@@ -46,6 +46,7 @@ def _update_proj_list():
                 parts = line.split()
                 PROJ_LIST_MAP[parts[0]] = parts[1]
             line = file.readline()
+
 
         # DEBUG
         # print("there are %d items in the map" % len(PROJ_LIST_MAP))
@@ -132,7 +133,7 @@ def drop_from_proj_list(project):
         with open(PROJ_LIST_FILE, 'r') as file:
             data_in = file.read()
         lines = data_in.split('\n')
-        if len(lines[-1]) == 0:
+        if not lines[-1]:
             lines = lines[0:-1]
         output = []
         for line in lines:
@@ -172,7 +173,7 @@ def get_proj_names():
 
     names = []
     files = os.listdir(GH_PAGES_BASE)
-    if len(files) > 0:
+    if files:
         files.sort()
         for file in files:
             proj_dir = proj_dir_from_name(file)
@@ -199,7 +200,7 @@ def proj_rel_path_from_name(project):
     Get relative path from base directory (dev/ or sharedev/) to
     project directory.
     """
-    if (not project) or len(project) == 0:
+    if not project:
         raise "no project name specified"
 
     rel_path = ""
@@ -296,8 +297,7 @@ def get_proj_defaults(abs_path=None):
 
     if failed:
         return None, None, None
-    else:
-        return lang, project, rel_path
+    return lang, project, rel_path
 
 
 def get_dir_for_lang(lang):

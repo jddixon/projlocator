@@ -55,7 +55,7 @@ def main():
         args.allProjects = True
 
     if args.allProjects:
-        if len(args.projects) > 0:
+        if args.projects:
             print("all projects selected, so ignoring names provided")
         args.projects = get_proj_names()
 

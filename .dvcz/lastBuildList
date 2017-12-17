@@ -7,21 +7,18 @@ Giaje1YAJPNVBt3dlOA5lhBp4GpSYBskJ9UR2Zyt3lgAGK3dEwxYETLMh9VWEV8i
 k2lyCIE/V/CDb9eVDYQgYSJYrnQ/JAPST7NbcY8aI+/0l7QVBhLBpmOCvmS6ofvz
 /QIDAQAB
 -----END PUBLIC KEY-----
-projlocator v0.0.8
-2017-10-04 23:43:57
+projlocator
+2017-12-17 22:17:35
 # BEGIN CONTENT #
 projlocator
  .dvcz
-  builds e6eccbe93faab85e9c8ec9800eb26c6c7aa15597
-  copyright 9ba73bf798bce641eb5082b855c6788fe7ea5833
-  lastBuildList 52baa32172705c291007a8dd6ee14895cc86283c
-  license 5977a55c75bb4612004451a56b0b4c22d9d3311d
+  builds e7ef2c0f235e0117531bfce644a2833a404bda9e
+  lastBuildList 4a74aa772d418fb77f3f7ba60030d3bea1f1763d
   projCfg bd4ec24b30ab4543c92c467c5d6b615c451996ac
   projCfg.local 59a259e4fd082bf8f853eaed67be4d2c5908d571
-  projConfig.toml ff802458e572d7e89f03730e3b14baebc03e8a71
-  version 88f05ec7f19b8b4a09dff5a3bf7b561d60730cd9
+  projConfig.toml bd23236e3d3ade165ef489df389696a67677470e
  .gitignore c8129c7133b7a7755cefd3dfc62a9af7bc306aa0
- CHANGES f9f5fcae4b0259092fb30f94ac063421bef0f9e8
+ CHANGES d6f312d5d62f413eb3809d31ad06118f700b4b0d
  LICENSE-MIT.md 1aadfd51d28fc4b9e3f5929212794dd121b13e26
  MANIFEST.in 7ecdc5eedf233385e0f99ba4c6e4a42212adb46f
  README.md c2a21064a3eaf72474b0eeb956c07699bced656a
@@ -34,12 +31,12 @@ projlocator
   index.md 189d5917540c3b909617d15fa217ef8af91bc6ff
  installit d5dee794f035dac3db1b7a14901cfb541767a39f
  requirements.txt 5cc8df21497b9e1d655a8b457529b3e7540ef0d9
- setup.py dd3b37dc7c030a0ad86a53b6f5001d26065640c7
+ setup.py eb2a6c9a7652f7a62f6d2efbb872b3b4c192c38e
  src
-  pl_projRelPath 2282ff890d6d19c033f4afa8ca522fc8db818da3
-  pl_projects 1b317254dd00d88d4ed009552357582083e8d9e4
+  pl_projRelPath 2b6340758115a34eff7019bbf608c4b7a7472a5a
+  pl_projects c927ccb5f0c44214191358ebdfc6eb732d00ed15
   projlocator
-   __init__.py 591417355103b2ab43f7f1a9f7c7c1c6ba7ddf61
+   __init__.py 4fd85794272c9ba18f81c62810cc962ceb3c824b
  styleit d6e8a97566427bc98f85801e85ed23503ffd18ee
  test.all b58bf598179349e7d53912335ff3d798aafe30a8
  test_requirements.txt 263fd147bfac9d1b6320c75edffd182b529677e2
@@ -48,8 +45,8 @@ projlocator
   test_lang_for_projects.py 07a5cb2dde598742647415838bfa01defc3ef075
   test_proj_dir_from_name.py df59c63bcde6c5fade72ab3a7ae1f8d3bf86b673
   test_proj_list.py c30971d6fd25eb5f044c739397b29c927c328f81
-  test_rel_path_for_projects.py 6a8b22721c41814ff3612e6ac90ca003debe22cf
+  test_rel_path_for_projects.py 382b00f97409c6a2687170a0f9516e8040266592
  tox.ini 7af5905e6f51595aa70dc2f8c82d11fda8ca8da6
 # END CONTENT #
 
-HqiWUcuTu/eZXKy/shiiKbomb8nlLbAbObY12GrF25J3r2ISTd5hDFMfeh3Mjwri4ZkDLAYM9qgLHiVxpUwQeIgOSnOfJwbmYweXs6tjeADJmh7O/VWawYalsBMBRNNxbcKBcE2/L4+CocFekdKn6pnlX4RS94yZJVaCy5+qEILvbsSpoAZVv2Pesu5rfvQmGaljxSupelSJk7LaT59AiTu95BNXPRv74AjhE1m2RSzT2w9PfACB2RX0mQr2iz4MGyxxoWnMdd94hdM+3mwcQHOc34E3CkK8XfGp9jsy535/gn4jRs9VVIll5+tE8Iavu1kt4iaa7IJ0yos7VLM7Vw==
+Abx84aMVifer1mAmwWMg/V91jCudD1QCISWr6PRVn8qDngdVYI1egfoLWAhi6W6LiXP4bA6ePF0d/IM184rVLsZskdgjA5klU7sHP3d3vEDJMKUtnC7kfFneC1vnBV/jO+qaFJO6wGUcW48BA5NyI7hLFZ2ZOeoI7W/DHEcXB9hta+OLjd75AyyyObMeF4duYKyo8UiEwwHO87AlhYhIII58yX82psQhq12hX1ITtXfEdtSPpxG37DgACEkY/dD230rD59192MqY/wSTcra2migK9QVTdWalbyh7Q+/hxiVJzIigzJWg4JqGRcfDdzFlGtzDWZ3O+2Sh/mWGvkIR3A==
