@@ -37,7 +37,7 @@ def main():
 
     # fixups --------------------------------------------------------
     # sanity checks -------------------------------------------------
-    if args.project is None or len(args.project) == 0:
+    if not args.project:
         print("you must supply a project name")
         parser.print_usage()
         sys.exit(1)

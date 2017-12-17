@@ -1,34 +1,30 @@
-projConfig.toml for projlocator
-
 [meta]
-    version = '0.1.0'
+version = "0.1.0"
 
 [project]
-    name = 'projlocator'  # distro name
-    package = 'projlocator'  # internal name
-    proj_dir = '/home/jdd/dev/py/projlocator'
-    main_lang = 'py'
-    version = '0.0.8'
-    version_date = '2017-10-04'
-    author = 'Jim Dixon'
-    author_email = 'jddixon@gmail.com'
-    copyright = '2016-2017'
-    description = 'manage software projects organized by language'
-    dev_status = 'alpha'
-    license = 'mit'
-    state = 'shared'
-    url = 'https://jddixon.github.io/projlocator'
+name = "projlocator"
+package = "projlocator"
+proj_dir = "/home/jdd/dev/py/projlocator"
+main_lang = "py"
+version = "0.0.9"
+version_date = "2017-12-17"
+author = "Jim Dixon"
+author_email = "jddixon@gmail.com"
+copyright = "2016-2017"
+description = "manage software projects organized by language"
+dev_status = "alpha"
+license = "mit"
+state = "shared"
+url = "https://jddixon.github.io/projlocator"
 
 [py]
-    packages=['projlocator']
-    package_dir = ['src']
-    test_dir = ['tests']
-    py_modules=[]
-    scripts=['src/pl_projects', 'src/pl_projRelPath']
-    ext_modules=[]
-
-    # sdReq output
-    distshare=['optionz', 'rnglib']
-    env_vars=['DEV_BASE', 'HOME']
-    requirements=['setuptools']
-    test_requirements=[]
+packages = [ "projlocator",]
+package_dir = [ "src",]
+test_dir = [ "tests",]
+py_modules = []
+scripts = [ "src/pl_projects", "src/pl_projRelPath",]
+ext_modules = []
+distshare = [ "optionz", "rnglib",]
+env_vars = [ "DEV_BASE", "HOME",]
+requirements = [ "setuptools",]
+test_requirements = []

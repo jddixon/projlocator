@@ -55,7 +55,7 @@ class TestRelPathForProject(unittest.TestCase):
         # these are real project names
         for pair in [
                 ('cryptoserver_go',
-                    'go/src/github.com/jddixon/cryptoserver_go'),
+                 'go/src/github.com/jddixon/cryptoserver_go'),
                 ('ctries_go', 'go/src/github.com/jddixon/ctries_go'),
                 ('merkletree', 'py/merkletree'),
                 ('nlp', 'py/nlp'),
@@ -78,13 +78,13 @@ class TestRelPathForProject(unittest.TestCase):
 
         # these are phoney project names -- we want the system to guess
         for pair in [
-            ('foo_c', 'c/foo_c'),
-            ('foo_go', 'go/src/github.com/jddixon/foo_go'),
-            ('foo_cpp', 'cpp/foo_cpp'),
-            ('foo_java', 'java/foo_java'),
-            ('foo_rb', 'rb/foo_rb'),
-            ('foo_ml', 'ml/foo_ml'),
-            ('foo_py', 'py/foo_py'),
+                ('foo_c', 'c/foo_c'),
+                ('foo_go', 'go/src/github.com/jddixon/foo_go'),
+                ('foo_cpp', 'cpp/foo_cpp'),
+                ('foo_java', 'java/foo_java'),
+                ('foo_rb', 'rb/foo_rb'),
+                ('foo_ml', 'ml/foo_ml'),
+                ('foo_py', 'py/foo_py'),
         ]:
             self.assertEqual(proj_rel_path_from_name(pair[0]), pair[1])
 
