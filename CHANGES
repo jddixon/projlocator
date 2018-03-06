@@ -1,5 +1,8 @@
 py/projlocator/CHANGES
 
+v0.0.10
+    2018-03-06
+        * edit setup.py, tox config files                           SLOC  933
 v0.0.9
     2017-12-17
         * pylinting                                                 SLOC  939
@@ -28,6 +31,7 @@ v0.0.2
 v0.0.1
     2016-11-30
         initial commit                                              SLOC  868
+
 
 
 

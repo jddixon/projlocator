@@ -8,17 +8,17 @@ k2lyCIE/V/CDb9eVDYQgYSJYrnQ/JAPST7NbcY8aI+/0l7QVBhLBpmOCvmS6ofvz
 /QIDAQAB
 -----END PUBLIC KEY-----
 projlocator
-2017-12-17 22:17:35
+2018-03-06 15:20:40
 # BEGIN CONTENT #
 projlocator
  .dvcz
-  builds e7ef2c0f235e0117531bfce644a2833a404bda9e
-  lastBuildList 4a74aa772d418fb77f3f7ba60030d3bea1f1763d
+  builds 0cace908f5749ae898df4f570d8645c4f9b9c2aa
+  lastBuildList 44ce8bcc8c5805cd76d76b4b4b01feb7bd58a1be
   projCfg bd4ec24b30ab4543c92c467c5d6b615c451996ac
   projCfg.local 59a259e4fd082bf8f853eaed67be4d2c5908d571
-  projConfig.toml bd23236e3d3ade165ef489df389696a67677470e
+  projConfig.toml eccd05a86f9f6f04da2b369d5a4da711b72c0136
  .gitignore c8129c7133b7a7755cefd3dfc62a9af7bc306aa0
- CHANGES d6f312d5d62f413eb3809d31ad06118f700b4b0d
+ CHANGES 5c48c1ecc979fb02aa47857da8cced223643de41
  LICENSE-MIT.md 1aadfd51d28fc4b9e3f5929212794dd121b13e26
  MANIFEST.in 7ecdc5eedf233385e0f99ba4c6e4a42212adb46f
  README.md c2a21064a3eaf72474b0eeb956c07699bced656a
@@ -30,23 +30,23 @@ projlocator
  ghpDoc
   index.md 189d5917540c3b909617d15fa217ef8af91bc6ff
  installit d5dee794f035dac3db1b7a14901cfb541767a39f
- requirements.txt 5cc8df21497b9e1d655a8b457529b3e7540ef0d9
- setup.py eb2a6c9a7652f7a62f6d2efbb872b3b4c192c38e
+ requirements.txt 4a45f76ada4ca382ab3205073061847b2d469c86
+ setup.py 5291a82ff52769969f05f5183bfcffae98d73777
  src
   pl_projRelPath 2b6340758115a34eff7019bbf608c4b7a7472a5a
   pl_projects c927ccb5f0c44214191358ebdfc6eb732d00ed15
   projlocator
-   __init__.py 4fd85794272c9ba18f81c62810cc962ceb3c824b
+   __init__.py ccf01e394594a45ab536af12c52b4b3f8415a014
  styleit d6e8a97566427bc98f85801e85ed23503ffd18ee
  test.all b58bf598179349e7d53912335ff3d798aafe30a8
- test_requirements.txt 263fd147bfac9d1b6320c75edffd182b529677e2
+ test_requirements.txt 504a5bc594324189f4670b52d986a51f4a6ea05e
  tests
   test_dir_lang_maps.py d387419f1d38e1ccba5139bc5478cadde55b92f3
   test_lang_for_projects.py 07a5cb2dde598742647415838bfa01defc3ef075
   test_proj_dir_from_name.py df59c63bcde6c5fade72ab3a7ae1f8d3bf86b673
   test_proj_list.py c30971d6fd25eb5f044c739397b29c927c328f81
   test_rel_path_for_projects.py 382b00f97409c6a2687170a0f9516e8040266592
- tox.ini 7af5905e6f51595aa70dc2f8c82d11fda8ca8da6
+ tox.ini d6bdb77cb5916f936f7adb74aff1b25ae78c44c9
 # END CONTENT #
 
-Abx84aMVifer1mAmwWMg/V91jCudD1QCISWr6PRVn8qDngdVYI1egfoLWAhi6W6LiXP4bA6ePF0d/IM184rVLsZskdgjA5klU7sHP3d3vEDJMKUtnC7kfFneC1vnBV/jO+qaFJO6wGUcW48BA5NyI7hLFZ2ZOeoI7W/DHEcXB9hta+OLjd75AyyyObMeF4duYKyo8UiEwwHO87AlhYhIII58yX82psQhq12hX1ITtXfEdtSPpxG37DgACEkY/dD230rD59192MqY/wSTcra2migK9QVTdWalbyh7Q+/hxiVJzIigzJWg4JqGRcfDdzFlGtzDWZ3O+2Sh/mWGvkIR3A==
+KwDNaAev6B8AUdIohoUlEm82EzvjzaEKab7TQq3iGkXgSBBRNjjukGlIw/Nx0AuunevueA1CEMVMXhlU8ScrLhZ/URnmD1XQp7+Rf7G+drIlb0zfMuGZENZulBGbnUNh7K9ZDo+lqtPEHaOiD+9Zx3OFyrsyeTt4Z0OLp7M9AsbkwpUZU1ekqNGKLLItjlvgIU78vdD1BBf9gjRwN4qW6FXuXT3d9b5GF6FhaTaM1284z6n8vJ0PWtnRjChG0q5ejRIcp4CudMyD5hQf9A4XbxqXJwPABfl9gic5nbdKr/I9Hzyd8UHkvFdzy9qZD8JLuN6jfYJyeOog5jJVqfWuVw==
