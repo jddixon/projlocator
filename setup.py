@@ -6,16 +6,16 @@
 from os.path import exists
 from setuptools import setup
 
-LONG_DESC = None
+long_desc = None
 if exists('README.md'):
     with open('README.md', 'r') as file:
-        LONG_DESC = file.read()
+        long_desc = file.read()
 
 setup(name='projlocator',
-      version='0.0.10',
+      version='0.0.11',
       author='Jim Dixon',
       author_email='jddixon@gmail.com',
-      long_description=LONG_DESC,
+      long_description=long_desc,
       packages=['projlocator'],
       package_dir={'': 'src'},
       py_modules=[],
@@ -30,7 +30,10 @@ setup(name='projlocator',
           'Intended Audience :: Developers',
           'License :: OSI Approved :: MIT License',
           'Natural Language :: English',
+          'Programming Language :: Python',
+          'Programming Language :: Python 2',
           'Programming Language :: Python 2.7',
+          'Programming Language :: Python 3',
           'Programming Language :: Python 3.5',
           'Programming Language :: Python 3.6',
           'Programming Language :: Python 3.7',
