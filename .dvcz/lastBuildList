@@ -7,18 +7,18 @@ Giaje1YAJPNVBt3dlOA5lhBp4GpSYBskJ9UR2Zyt3lgAGK3dEwxYETLMh9VWEV8i
 k2lyCIE/V/CDb9eVDYQgYSJYrnQ/JAPST7NbcY8aI+/0l7QVBhLBpmOCvmS6ofvz
 /QIDAQAB
 -----END PUBLIC KEY-----
-projlocator
-2018-03-06 15:20:40
+projlocator v0.0.11
+2018-03-22 22:35:36
 # BEGIN CONTENT #
 projlocator
  .dvcz
-  builds 0cace908f5749ae898df4f570d8645c4f9b9c2aa
-  lastBuildList 44ce8bcc8c5805cd76d76b4b4b01feb7bd58a1be
+  builds e927cdc282684f4a2da694d9e89d15b2c4355f5b
+  lastBuildList 04c7d6bdac0adc571b14116d1fd5c9f535f063f8
   projCfg bd4ec24b30ab4543c92c467c5d6b615c451996ac
   projCfg.local 59a259e4fd082bf8f853eaed67be4d2c5908d571
-  projConfig.toml eccd05a86f9f6f04da2b369d5a4da711b72c0136
+  projConfig.toml 7fb409db8f56e9fe02e4f36f97750c910569c738
  .gitignore c8129c7133b7a7755cefd3dfc62a9af7bc306aa0
- CHANGES 5c48c1ecc979fb02aa47857da8cced223643de41
+ CHANGES 67a6f17388664a578d07720bf5aa591b3b3ec0f7
  LICENSE-MIT.md 1aadfd51d28fc4b9e3f5929212794dd121b13e26
  MANIFEST.in 7ecdc5eedf233385e0f99ba4c6e4a42212adb46f
  README.md c2a21064a3eaf72474b0eeb956c07699bced656a
@@ -31,12 +31,12 @@ projlocator
   index.md 189d5917540c3b909617d15fa217ef8af91bc6ff
  installit d5dee794f035dac3db1b7a14901cfb541767a39f
  requirements.txt 4a45f76ada4ca382ab3205073061847b2d469c86
- setup.py 5291a82ff52769969f05f5183bfcffae98d73777
+ setup.py a2877a22b65f208da53b4862da5e733aa52cf355
  src
   pl_projRelPath 2b6340758115a34eff7019bbf608c4b7a7472a5a
   pl_projects c927ccb5f0c44214191358ebdfc6eb732d00ed15
   projlocator
-   __init__.py ccf01e394594a45ab536af12c52b4b3f8415a014
+   __init__.py f271d2700429358b6dcdea7d23733eb2277fa46d
  styleit d6e8a97566427bc98f85801e85ed23503ffd18ee
  test.all b58bf598179349e7d53912335ff3d798aafe30a8
  test_requirements.txt 504a5bc594324189f4670b52d986a51f4a6ea05e
@@ -49,4 +49,4 @@ projlocator
  tox.ini d6bdb77cb5916f936f7adb74aff1b25ae78c44c9
 # END CONTENT #
 
-KwDNaAev6B8AUdIohoUlEm82EzvjzaEKab7TQq3iGkXgSBBRNjjukGlIw/Nx0AuunevueA1CEMVMXhlU8ScrLhZ/URnmD1XQp7+Rf7G+drIlb0zfMuGZENZulBGbnUNh7K9ZDo+lqtPEHaOiD+9Zx3OFyrsyeTt4Z0OLp7M9AsbkwpUZU1ekqNGKLLItjlvgIU78vdD1BBf9gjRwN4qW6FXuXT3d9b5GF6FhaTaM1284z6n8vJ0PWtnRjChG0q5ejRIcp4CudMyD5hQf9A4XbxqXJwPABfl9gic5nbdKr/I9Hzyd8UHkvFdzy9qZD8JLuN6jfYJyeOog5jJVqfWuVw==
+MrKJRBpIbtvHwSh87n0Yv7hSlwEfgHTLVPhQphJVE2gjoEIQswcOhXxnFPTbc1YtP1CyGjz3OrmTlTM65IrLnfOvoH+CjlBE+lF5yViAWW2gJ3jWzF31LiYyyMslc2clAK2SwUKXhQI8R5xG+RDAbNTBWQbjX6Q1s1/QD18kGBbXvE+GD91FYBakHB4uQ5PXd9M5RMkCu92Zgnf5ECLJ/zZnip+FeQnwaGLNkDcvB5a8F/ngUf3Y7U4WbbESGs0Xpe07ohLRAYUGZ+LynX8CoOdqkG2E3FqJmu0d0SdDwzEmaJUa3XM5XkUlJUJGbjAAgh5rZGQ9/x3i4kMFixYPJw==
